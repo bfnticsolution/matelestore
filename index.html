@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Téléchargez l'application MA TELE pour une expérience de streaming inégalée. Disponible sur Play Store.">
+    <meta name="keywords" content="MA TELE, Streaming, Application, Téléchargement, Play Store">
+    <link rel="icon" href="Images/ma tele logo.png" type="image/png">
+    <title>MA TELE - Téléchargez Maintenant</title>
+    <style>
+        /* Styles principaux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        #hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #ffffff, #f9fbfc);
+            color: rgb(5, 3, 98);
+        }
+        #hero img {
+            max-width: 300px;
+            margin-top: 20px;
+        }
+        .cta-button {
+            background-color: #f58c00;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        .cta-button:hover, .cta-button:focus {
+            background-color: #ff9900;
+        }
+        .cta-button:focus {
+            outline: 2px solid #005580;
+        }
+        .feature-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .feature {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: calc(100% - 40px);
+            max-width: 300px;
+        }
+        footer {
+            background: #003366;
+            color: white;
+            padding: 10px 0;
+        }
+        /* Styles responsive */
+        @media screen and (max-width: 768px) {
+            #hero img {
+                max-width: 90%;
+            }
+            .feature {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .cta-button {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
+            footer {
+                font-size: 0.8rem;
+            }
+        }
+
+        #testimonials {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonials-carousel p {
+    display: none; /* Masque tous les témoignages par défaut */
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #333;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.testimonials-carousel p:first-of-type {
+    display: block; /* Affiche le premier témoignage par défaut */
+}
+
+#testimonials h2 {
+    font-size: 2rem;
+    color: #005580;
+    margin-bottom: 20px;
+}
+
+    </style>
+     <script>
+        // Redirection automatique vers Google Play Store
+        window.onload = function () {
+            // Tente d'ouvrir l'application Google Play Store
+            window.location.href = "market://details?id=rtb.aplinig";
+
+            // Si l'application Google Play Store n'est pas installée,
+            // redirige vers la version web après un délai
+            setTimeout(function () {
+                window.location.href = "https://play.google.com/store/apps/details?id=rtb.aplinig";
+            }, 2000); // 2 secondes
+        };
+    </script>
+</head>
+<body>
+    <!-- Section principale : Hero -->
+    <section id="hero">
+        <div class="content">
+            <h1>Suivez la télé sur téléphone</h1>
+        </div>
+        <div class="image">
+            <img src="Images/mockup.png" alt="Illustration de l'application MA TELE">
+        </div>
+        <div>
+            <p>Regardez vos chaînes préférées où que vous soyez.</p>
+            <a href="https://play.google.com/store/apps/details?id=rtb.aplinig" class="cta-button">Télécharger sur Play Store</a>
+        </div>
+    </section>
+
+    <!-- Section des fonctionnalités -->
+    <section id="features">
+        <h2>Pourquoi choisir MA TELE ?</h2>
+        <div class="feature-list">
+            <div class="feature">
+                <img src="Images/agent lunette pub.jpg" alt="Streaming rapide" class="feature-image">
+                <h3>Streaming rapide</h3>
+                <p>Une qualité vidéo exceptionnelle sans interruptions.</p>
+            </div>
+            <div class="feature">
+                <img src="Images/agent violet pub.jpg" alt="Large choix de chaînes" class="feature-image">
+                <h3>Large choix de chaînes</h3>
+                <p>Des centaines de chaînes adaptées à vos goûts.</p>
+            </div>
+            <div class="feature">
+                <img src="Images/mockup.png" alt="Accessible partout" class="feature-image">
+                <h3>Accessible partout</h3>
+                <p>Disponible sur smartphone, tablette et plus.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section des avis -->
+    <section id="testimonials">
+        <h2>Avis des utilisateurs</h2>
+        <div class="testimonials-carousel">
+            <p>"MA TELE est incroyable, je ne m'en passe plus !" - <strong>Jean K.</strong></p>
+            <p>"Qualité exceptionnelle, très facile à utiliser." - <strong>Fatima S.</strong></p>
+            <p>"Je peux suivre mes chaînes préférées où que je sois. Merci MA TELE !" - <strong>Amina L.</strong></p>
+            <p>"Une application vraiment pratique et fiable." - <strong>Thierry M.</strong></p>
+            <p>"C'est exactement ce que je cherchais pour mes soirées télé !" - <strong>Lucie D.</strong></p>
+            <p>"Le choix des chaînes est fantastique, tout le monde y trouve son compte." - <strong>Oumar N.</strong></p>
+            <p>"L'interface est intuitive et facile à prendre en main." - <strong>Sophie R.</strong></p>
+            <p>"Une expérience de streaming fluide et sans bug. Bravo !" - <strong>David P.</strong></p>
+            <p>"Les chaînes locales et internationales sont toutes là. Je recommande !" - <strong>Karim T.</strong></p>
+            <p>"Je ne peux plus me passer de cette application. Un vrai bonheur !" - <strong>Anna C.</strong></p>
+        </div>
+    </section>
+    
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2024 MA TELE. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Fonction de défilement fluide
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Slider automatique pour les témoignages
+        let index = 0;
+        const testimonials = document.querySelectorAll('.testimonials-carousel p');
+        setInterval(() => {
+            testimonials.forEach((testimonial, i) => {
+                testimonial.style.display = i === index ? 'block' : 'none';
+            });
+            index = (index + 1) % testimonials.length;
+        }, 3000);
+    </script>
+</body>
+</html>
